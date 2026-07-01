@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <title>Mango Classification Notebook</title>
-    <script src="https://unpkg.com/@jupyterlite/notebook-embed"></script>
+    <!-- Load JupyterLite -->
+    <script src="https://unpkg.com/@jupyterlite/core/dist/index.js"></script>
+    <script src="https://unpkg.com/@jupyterlite/notebook-embed/dist/index.js"></script>
   </head>
   <body>
     <h1>Mango Classification Notebook</h1>
     <div id="jupyterlite"></div>
     <script>
-      // Load JupyterLite and point it to your lite.json
+      // Tell JupyterLite to use your lite.json
       window.jupyterlite = {
         liteConfigUrl: "./lite.json"
       };
